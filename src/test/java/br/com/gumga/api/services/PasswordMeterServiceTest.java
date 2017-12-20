@@ -2,16 +2,23 @@ package br.com.gumga.api.services;
 
 import static org.junit.Assert.assertEquals;
 
+import java.util.List;
+
 import org.junit.Before;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import br.com.gumga.api.enums.Complexity;
+import br.com.gumga.api.metrics.Metric;
 import br.com.gumga.api.models.PasswordMeter;
 
 public class PasswordMeterServiceTest {
 	private String pwd = "Py5fcvmo@2017"; 	
 	private PasswordMeterService pms;
 
+	@Autowired
+	List<Metric> metrics;
+	
     @Before
     public void setUp() {
     	pms = new PasswordMeterService();
@@ -29,3 +36,5 @@ public class PasswordMeterServiceTest {
         assertEquals(100, pm.getScore());
     }
 }
+
+

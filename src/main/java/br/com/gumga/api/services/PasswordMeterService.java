@@ -31,7 +31,7 @@ public class PasswordMeterService {
 		
 		Complexity complexity = null;		
 		if (score >= 0 && score < 20){ 
-			complexity = Complexity.VERY_WEEK;   
+			complexity = Complexity.VERY_WEAK;   
 		
 		} else if (score >= 20 && score < 40) { 
 			complexity = Complexity.WEAK;        

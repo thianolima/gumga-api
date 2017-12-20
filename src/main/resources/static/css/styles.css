@@ -1,0 +1,28 @@
+body{
+	margin-top: 20px
+}
+
+#score, #complexity{
+	height: 30px;
+	font-size: medium;	
+}
+
+.MUITO_FRACO{
+	color: #FF0000;
+} 
+
+.FRACO{
+	color: #FF8C00;
+} 
+
+.BOM{
+	color: #FFFF00;
+} 
+
+.FORTE{
+	color: #32CD32;
+} 
+
+.MUITO_FORTE{
+	color: #006400;
+}

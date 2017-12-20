@@ -10,7 +10,7 @@ import br.com.gumga.api.metrics.additions.MiddleNumbersOrSymbolsMetric;
 
 public class MiddleNumbersOrSymbolsMetricTest {
 	private Metric metric;
-	private String pwd = "PY5FCVMO2017"; 
+	private String pwd = "Py5fcvmo"; 
 	
     @Before
     public void setUp() {
@@ -20,7 +20,7 @@ public class MiddleNumbersOrSymbolsMetricTest {
     @Test
     public void count() {
         int n = metric.count(pwd);        
-        assertEquals(5, n);
+        assertEquals(1, n);
     }
     
     @Test
@@ -28,6 +28,6 @@ public class MiddleNumbersOrSymbolsMetricTest {
         int n   = metric.count(pwd);
         int r   = metric.rate(0, n);
         
-        assertEquals(20, r);
+        assertEquals(2, r);
     }
 }
